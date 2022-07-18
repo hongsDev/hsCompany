@@ -1,4 +1,7 @@
+create user hsCompany identified by hsCompany;
 
-create user hsportal identified by hsportal;
+GRANT CONNECT,RESOURCE,DBA TO hsCompany;
+GRANT CREATE TABLE, CREATE VIEW TO hsCompany;
+GRANT CONNECT,DBA TO hsCompany;
 
-grant connect, resource to hsPortal;
+commit;
